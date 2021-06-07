@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2B589"
+        android:text="사용자가 가장 많이 찾은 테마"
+        android:textColor="#ffffff"
+        android:textSize="30sp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginVertical="10dp"></View>
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="5dp"></Gallery>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginVertical="20dp"
+        android:background="#495057"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2B589"
+        android:text="뜨거운 여름 시원한 테마"
+        android:textColor="#ffffff"
+        android:textSize="30sp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginVertical="10dp"></View>
+
+    <Gallery
+        android:id="@+id/gallery2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="5dp"></Gallery>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginVertical="10dp"></View>
+    <ImageButton
+        android:id="@+id/thema_homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:src="@drawable/result_home2"></ImageButton>
+
+</LinearLayout>

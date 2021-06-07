@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#갯벌 모아보기"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#ffffff"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/exTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="떙땡시 땡땡구 땡땡로 갯벌"
+                    android:textColor="#000000"
+                    android:textSize="25sp"></TextView>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginVertical="20dp"
+                android:background="#495057"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@drawable/stroke"
+                android:elevation="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gallery_iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/exTxt1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/exTxt1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="20sp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#ffffff"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@drawable/stroke"
+                android:elevation="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gallery_iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/exTxt2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/exTxt2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="20sp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#ffffff"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:background="@drawable/stroke"
+                android:elevation="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gallery_iv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/exTxt3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/exTxt3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="어디어디 갯벌 축제"
+                        android:textColor="#000000"
+                        android:textSize="20sp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="#ffffff"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:background="@drawable/stroke"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="찾아오시는길"
+                    android:textColor="#000000"
+                    android:textSize="30sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/gps_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"></ImageView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="15dp"
+                android:background="#ffffff"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/ghomeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:src="@drawable/result_home2"></ImageButton>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

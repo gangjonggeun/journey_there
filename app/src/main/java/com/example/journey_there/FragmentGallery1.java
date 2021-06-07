@@ -1,12 +1,13 @@
 package com.example.journey_there;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,28 +16,20 @@ import android.view.ViewGroup;
  */
 public class FragmentGallery1 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ImageView fragment1_iv;
 
     public FragmentGallery1() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentGallery1.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static FragmentGallery1 newInstance(String param1, String param2) {
         FragmentGallery1 fragment = new FragmentGallery1();
         Bundle args = new Bundle();
@@ -49,15 +42,29 @@ public class FragmentGallery1 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_gallery1, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_gallery1, container, false);
+        fragment1_iv  = (ImageView)rootview.findViewById(R.id.fragment1_iv);
+
+        fragment1_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), galleryActivity.class);
+                intent.putExtra("gallery", 0);
+                startActivityForResult(intent, 0);
+            }
+        });
+
+        return  rootview;
     }
 }

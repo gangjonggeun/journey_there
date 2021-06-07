@@ -4,17 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
         <ImageView
+            android:id="@+id/fragment1_iv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitStart"
-            android:src="@drawable/gallery_1"
-            android:adjustViewBounds="true"
-            android:layout_weight="1"/>
-    </LinearLayout>
+            android:src="@drawable/gallery1"
+            android:adjustViewBounds="true" />
+
 
 </LinearLayout>

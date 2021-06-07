@@ -1,29 +1,30 @@
 package com.example.journey_there;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
 
 public class FragmentGallery2 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ImageView fragment2_iv;
 
     public FragmentGallery2() {
         // Required empty public constructor
     }
 
 
-    // TODO: Rename and change types and number of parameters
     public static FragmentGallery2 newInstance(String param1, String param2) {
         FragmentGallery2 fragment = new FragmentGallery2();
         Bundle args = new Bundle();
@@ -43,9 +44,19 @@ public class FragmentGallery2 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gallery2, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_gallery2, container, false);
+        fragment2_iv  = (ImageView)rootview.findViewById(R.id.fragment2_iv);
+
+        fragment2_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), galleryActivity.class);
+                intent.putExtra("gallery", 1);
+                startActivityForResult(intent, 1);
+            }
+        });
+
+        return  rootview;
     }
 }
