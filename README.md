@@ -17,3 +17,8 @@ journey_there/app/src/main/java/com/example/journey_there/
 journey_there/app/src/main/res/layout
 로 이동하여 볼 수 있습니다.
 
+인공지능 모델은
+journey_there/app/src/main/assets/
+에 있습니다.
+
+프로젝트 보고서 및 발표자료, 설계도 올려 두었습니다.
