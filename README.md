@@ -21,4 +21,4 @@ journey_there/app/src/main/res/layout
 journey_there/app/src/main/assets/
 에 있습니다.
 
-프로젝트 보고서 및 발표자료, 설계도 올려 두었습니다.
+프로젝트 보고서 및 발표자료, 설계도, 회의록은 프로젝트 보고서 란에 올려 두었습니다.
